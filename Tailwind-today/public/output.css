@@ -199,6 +199,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .grid {
+    display: grid;
+  }
   .table {
     display: table;
   }
@@ -216,6 +219,15 @@
   }
   .resize {
     resize: both;
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
   .border {
     border-style: var(--tw-border-style);
