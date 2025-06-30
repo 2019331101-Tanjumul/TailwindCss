@@ -9,6 +9,9 @@
       "Courier New", monospace;
     --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-800: oklch(44.4% 0.177 26.899);
+    --color-blue-300: oklch(80.9% 0.105 251.813);
+    --color-blue-400: oklch(70.7% 0.165 254.624);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-white: #fff;
@@ -311,11 +314,23 @@
   .grid-rows-5 {
     grid-template-rows: repeat(5, minmax(0, 1fr));
   }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
   .gap-\[20px\] {
     gap: 20px;
   }
   .gap-\[30px\] {
     gap: 30px;
+  }
+  .rounded-\[5px\] {
+    border-radius: 5px;
+  }
+  .rounded-\[9px\] {
+    border-radius: 9px;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -324,14 +339,32 @@
   .bg-\[\#696969\] {
     background-color: #696969;
   }
+  .bg-\[\#d9d9d9\] {
+    background-color: #d9d9d9;
+  }
   .bg-\[\#fefefe\] {
     background-color: #fefefe;
+  }
+  .bg-blue-300 {
+    background-color: var(--color-blue-300);
+  }
+  .bg-blue-400 {
+    background-color: var(--color-blue-400);
+  }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
   }
   .bg-red-300 {
     background-color: var(--color-red-300);
   }
   .bg-slate-300 {
     background-color: var(--color-slate-300);
+  }
+  .p-\[15px\] {
+    padding: 15px;
+  }
+  .p-\[15px_25px\] {
+    padding: 15px 25px;
   }
   .p-\[20px\] {
     padding: 20px;
@@ -356,6 +389,15 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-\[9px\] {
+    padding-block: 9px;
+  }
+  .py-\[15px\] {
+    padding-block: 15px;
+  }
+  .py-\[29px\] {
+    padding-block: 29px;
   }
   .py-\[30\] {
     padding-block: 30;
@@ -440,6 +482,12 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[\#737373\] {
+    color: #737373;
+  }
+  .text-\[\#d9d9d9\] {
+    color: #d9d9d9;
+  }
   .text-blue-600 {
     color: var(--color-blue-600);
   }
@@ -512,6 +560,16 @@
       grid-template-columns: 40% auto;
     }
   }
+  .md\:flex-col {
+    @media (width >= 48rem) {
+      flex-direction: column;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
   .md\:py-\[60px\] {
     @media (width >= 48rem) {
       padding-block: 60px;
@@ -535,6 +593,16 @@
   .lg\:grid-cols-4 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .lg\:flex-col {
+    @media (width >= 64rem) {
+      flex-direction: column;
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
     }
   }
   .lg\:py-\[80px\] {
