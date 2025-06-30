@@ -8,11 +8,13 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-800: oklch(44.4% 0.177 26.899);
+    --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -209,6 +211,36 @@
       max-width: 96rem;
     }
   }
+  .m-\[20px\] {
+    margin: 20px;
+  }
+  .m-\[20px_40px\] {
+    margin: 20px 40px;
+  }
+  .m-\[20px_40px_3\] {
+    margin: 20px 40px 3;
+  }
+  .m-\[20px_40px_30px\] {
+    margin: 20px 40px 30px;
+  }
+  .m-\[20px_40px_30px_20px\] {
+    margin: 20px 40px 30px 20px;
+  }
+  .m-\[20px_40px_30px_50px\] {
+    margin: 20px 40px 30px 50px;
+  }
+  .m-\[20px_40px_\] {
+    margin: 20px 40px ;
+  }
+  .m-\[50px_40px_30px_0px\] {
+    margin: 50px 40px 30px 0px;
+  }
+  .m-\[50px_40px_30px_20px\] {
+    margin: 50px 40px 30px 20px;
+  }
+  .m-\[50px_40px_30px_50px\] {
+    margin: 50px 40px 30px 50px;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -238,6 +270,9 @@
   }
   .max-w-\[1270px\] {
     max-width: 1270px;
+  }
+  .max-w-\[1370px\] {
+    max-width: 1370px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -310,19 +345,51 @@
   .text-\[30px\] {
     font-size: 30px;
   }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
+  .text-\[50px\] {
+    font-size: 50px;
+  }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
   }
+  .font-\[20\] {
+    --tw-font-weight: 20;
+    font-weight: 20;
+  }
+  .font-\[20px\] {
+    --tw-font-weight: 20px;
+    font-weight: 20px;
+  }
+  .font-\[40px\] {
+    --tw-font-weight: 40px;
+    font-weight: 40px;
+  }
+  .font-\[200\] {
+    --tw-font-weight: 200;
+    font-weight: 200;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-blue-600 {
+    color: var(--color-blue-600);
   }
   .text-red-800 {
     color: var(--color-red-800);
   }
   .text-white {
     color: var(--color-white);
+  }
+  .uppercase {
+    text-transform: uppercase;
   }
   .underline {
     text-decoration-line: underline;
