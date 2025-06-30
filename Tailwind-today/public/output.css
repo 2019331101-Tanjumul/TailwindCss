@@ -338,8 +338,14 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-\[0px\] {
+    font-size: 0px;
+  }
   .text-\[10px\] {
     font-size: 10px;
+  }
+  .text-\[18px\] {
+    font-size: 18px;
   }
   .text-\[20px\] {
     font-size: 20px;
@@ -374,6 +380,9 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .text-\[px\] {
+    color: px;
   }
   .text-red-800 {
     color: var(--color-red-800);
