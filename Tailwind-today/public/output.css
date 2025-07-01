@@ -534,6 +534,10 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .duration-\[0\.2s\] {
+    --tw-duration: 0.2s;
+    transition-duration: 0.2s;
+  }
   .duration-\[0\.5\] {
     --tw-duration: 0.5;
     transition-duration: 0.5;
@@ -541,6 +545,129 @@
   .duration-\[0\.5s\] {
     --tw-duration: 0.5s;
     transition-duration: 0.5s;
+  }
+  .duration-\[0\.10s\] {
+    --tw-duration: 0.10s;
+    transition-duration: 0.10s;
+  }
+  .duration-\[0\.54s\] {
+    --tw-duration: 0.54s;
+    transition-duration: 0.54s;
+  }
+  .duration-\[1s\] {
+    --tw-duration: 1s;
+    transition-duration: 1s;
+  }
+  .duration-\[2s\] {
+    --tw-duration: 2s;
+    transition-duration: 2s;
+  }
+  .duration-\[s\] {
+    --tw-duration: s;
+    transition-duration: s;
+  }
+  .group-hover\:scale-15 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 15%;
+        --tw-scale-y: 15%;
+        --tw-scale-z: 15%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:scale-35 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 35%;
+        --tw-scale-y: 35%;
+        --tw-scale-z: 35%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:scale-55 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 55%;
+        --tw-scale-y: 55%;
+        --tw-scale-z: 55%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:scale-105 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:scale-115 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 115%;
+        --tw-scale-y: 115%;
+        --tw-scale-z: 115%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:scale-125 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 125%;
+        --tw-scale-y: 125%;
+        --tw-scale-z: 125%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:scale-135 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 135%;
+        --tw-scale-y: 135%;
+        --tw-scale-z: 135%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:text-\[blue\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: blue;
+      }
+    }
+  }
+  .hover\:translate-\[-2\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-x: -2;
+        --tw-translate-y: -2;
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .hover\:translate-\[-10px\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-x: -10px;
+        --tw-translate-y: -10px;
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .hover\:translate-y-\[-10px\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-y: -10px;
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
   }
   .hover\:bg-white {
     &:hover {
@@ -784,6 +911,36 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -806,6 +963,12 @@
       --tw-ring-offset-shadow: 0 0 #0000;
       --tw-outline-style: solid;
       --tw-duration: initial;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
     }
   }
 }
