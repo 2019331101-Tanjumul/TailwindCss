@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-800: oklch(44.4% 0.177 26.899);
+    --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
@@ -196,6 +197,9 @@
   .m-\[50px_40px_30px_20px\] {
     margin: 50px 40px 30px 20px;
   }
+  .mx-\[20px\] {
+    margin-inline: 20px;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -322,6 +326,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
@@ -393,8 +400,14 @@
   .px-\[20px\] {
     padding-inline: 20px;
   }
+  .px-\[30px\] {
+    padding-inline: 30px;
+  }
   .px-\[40px\] {
     padding-inline: 40px;
+  }
+  .px-\[60px\] {
+    padding-inline: 60px;
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
@@ -413,6 +426,9 @@
   }
   .py-\[30px\] {
     padding-block: 30px;
+  }
+  .py-\[38px\] {
+    padding-block: 38px;
   }
   .py-\[60px\] {
     padding-block: 60px;
@@ -500,6 +516,21 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .duration-\[0\.5\] {
+    --tw-duration: 0.5;
+    transition-duration: 0.5;
+  }
+  .duration-\[0\.5s\] {
+    --tw-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .hover\:bg-yellow-400 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-yellow-400);
+      }
+    }
   }
   .sm\:w-\[50\%\] {
     @media (width >= 40rem) {
@@ -710,6 +741,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -731,6 +766,7 @@
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
       --tw-outline-style: solid;
+      --tw-duration: initial;
     }
   }
 }
