@@ -259,17 +259,29 @@
   .grow {
     flex-grow: 1;
   }
+  .basis-\[0\%\] {
+    flex-basis: 0%;
+  }
   .basis-\[30\%\] {
     flex-basis: 30%;
   }
   .basis-\[30\] {
     flex-basis: 30;
   }
+  .basis-\[40\%\] {
+    flex-basis: 40%;
+  }
+  .basis-\[40\] {
+    flex-basis: 40;
+  }
   .basis-\[45px\] {
     flex-basis: 45px;
   }
   .basis-\[55\%\] {
     flex-basis: 55%;
+  }
+  .basis-\[60\%\] {
+    flex-basis: 60%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -285,6 +297,9 @@
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
