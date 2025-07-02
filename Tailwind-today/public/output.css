@@ -307,11 +307,41 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-\[2\] {
+    border-style: var(--tw-border-style);
+    border-width: 2;
+  }
+  .border-\[2px\] {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-t-\[2px\] {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
+  .border-\[\#2188e3\] {
+    border-color: #2188e3;
+  }
+  .border-\[\#3113b8\] {
+    border-color: #3113b8;
+  }
+  .border-\[\#4421e3\] {
+    border-color: #4421e3;
+  }
+  .border-\[\#852635\] {
+    border-color: #852635;
+  }
   .border-\[Green\] {
     border-color: Green;
   }
   .border-\[blue\] {
     border-color: blue;
+  }
+  .border-\[m\] {
+    border-color: m;
+  }
+  .border-\[pink\] {
+    border-color: pink;
   }
   .border-\[red\] {
     border-color: red;
